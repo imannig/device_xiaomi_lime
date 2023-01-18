@@ -32,5 +32,10 @@ ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/manifest_lemon.xml
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
+# Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from the proprietary version
 include vendor/xiaomi/lime/BoardConfigVendor.mk
