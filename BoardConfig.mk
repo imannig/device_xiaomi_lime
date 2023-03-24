@@ -26,6 +26,7 @@ ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/manifest_lemon.xml
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private

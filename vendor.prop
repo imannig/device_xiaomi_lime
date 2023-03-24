@@ -1,0 +1,2 @@
+# Dynamic variant properties
+import /vendor/build_${ro.boot.product.hardware.sku}.prop

@@ -26,6 +26,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     LimeFrameworks
 
+# Properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,build.*.prop,$(LOCAL_PATH)/,$(TARGET_COPY_OUT_VENDOR))
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
