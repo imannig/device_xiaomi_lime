@@ -19,10 +19,9 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_lime
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_lime
 
-# Kernel - Prebuilt images
-#BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+# Kernel
+BOARD_PREBUILT_DTBOIMAGE := $(COMMON_PATH)-kernel/lime/dtbo.img
+TARGET_PREBUILT_DTB := $(COMMON_PATH)-kernel/lime/dtb.img
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # NFC
