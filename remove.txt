@@ -1,3 +1,4 @@
 device/xiaomi/
 vendor/xiaomi/
 kernel/xiaomi/
+hardware/qcom-caf/bengal/
